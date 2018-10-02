@@ -42,25 +42,25 @@ class BST:
             if new_node.has_left_node():
                 self.put_private(key, value, new_node.left)
             else:
-                new_node.leftNode = Node(key, value, parent=new_node)
+                new_node.left = Node(key, value, parent=new_node)
         else:
             if new_node.has_right_node():
                 self.put_private(key, value, new_node.right)
             else:
-                new_node.left = Node(key, value, parent=new_node)
+                new_node.right = Node(key, value, parent=new_node)
 
-    def find_lca(self, root_node, node1, node2):
+    def find_lca(self, current_node, node1, node2):
 
-        if root_node is None:
+        if self.root is None:
             return None
 
-        if root_node.key > node1 and root_node.key > node2:
-            return self.find_lca(root_node.left, node1, node2)
+        if current_node.key > node1 and current_node.key > node2:
+            return self.find_lca(current_node.left, node1, node2)
 
-        if root_node.key > node2 and root_node.key > node1:
-            return self.find_lca(root_node.right, node1, node2)
+        if current_node.key > node2 and current_node.key > node1:
+            return self.find_lca(current_node.right, node1, node2)
 
-        return root_node.key
+        return current_node.key
 
 # test_tree = BST()
 # test_tree.put_public(5, 7)
