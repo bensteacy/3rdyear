@@ -7,17 +7,15 @@ class Node:
         self.value = value
         self.key = key
 
-    def get(self):
-        return self.value
-
-    def set(self, value):
-        self.value = value
-
     def has_left_node(self):
         return self.left
 
     def has_right_node(self):
         return self.right
+
+    def is_root_node(self):
+        if self.parent is not None:
+            return True
 
 
 class BST:
@@ -51,16 +49,18 @@ class BST:
             else:
                 new_node.left = Node(key, value, parent=new_node)
 
+    def find_lca(self, root_node, node1, node2):
 
-def find_lca(root, node1, node2):
-    if root is None:
-        return None
+        if root_node is None:
+            return None
 
-    if root.key > node1 and root.data > node2:
-        return root.find_lca(root.left, node1, node2)
+        if root_node.key > node1 and root_node.key > node2:
+            return self.find_lca(root_node.left, node1, node2)
 
-    if root.key > node2 and root.data > node1:
-        return root.find_lca(root.right, node1, node2)
+        if root_node.key > node2 and root_node.key > node1:
+            return self.find_lca(root_node.right, node1, node2)
+
+        return root_node.key
 
 # test_tree = BST()
 # test_tree.put_public(5, 7)

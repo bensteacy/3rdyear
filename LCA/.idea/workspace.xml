@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ffb183f-761c-4bfc-941d-75283423f9e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test_BST.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/LCA.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_LCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_LCA.py" afterDir="false" />
@@ -26,22 +27,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="6" />
+          <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="6" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2035" />
+          <entry key="py" value="2510" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2035" />
+          <entry key="Python" value="2510" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -52,28 +53,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LCA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+            <state relative-caret-position="170">
+              <caret line="53" column="29" lean-forward="true" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
               <folding>
-                <marker date="1538478632946" expanded="true" signature="11:16" ph="..." />
-                <marker date="1538478632946" expanded="true" signature="361:392" ph="..." />
-                <marker date="1538478632946" expanded="true" signature="457:462" ph="..." />
-                <marker date="1538478632946" expanded="true" signature="481:490" ph="..." />
-                <marker date="1538478632946" expanded="true" signature="549:558" ph="..." />
-                <marker date="1538478632946" expanded="true" signature="662:827" ph="..." />
+                <marker date="1538493354056" expanded="true" signature="11:16" ph="..." />
+                <marker date="1538493354056" expanded="true" signature="261:292" ph="..." />
+                <marker date="1538493354056" expanded="true" signature="446:451" ph="..." />
+                <marker date="1538493354056" expanded="true" signature="470:479" ph="..." />
+                <marker date="1538493354056" expanded="true" signature="538:547" ph="..." />
+                <marker date="1538493354056" expanded="true" signature="651:816" ph="..." />
+                <marker date="1538493354056" expanded="true" signature="1336:1341" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test_LCA.py">
+        <entry file="file://$PROJECT_DIR$/test_BST.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="327">
+              <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
+                <marker date="1538493516753" expanded="true" signature="404:405" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_LCA.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="10" selection-start-column="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -94,12 +106,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/LCAtest.py" />
-        <option value="$PROJECT_DIR$/LCA.py" />
         <option value="$PROJECT_DIR$/test_LCA.py" />
+        <option value="$PROJECT_DIR$/LCA.py" />
+        <option value="$PROJECT_DIR$/test_BST.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1905" />
     <option name="width" value="1948" />
     <option name="height" value="2075" />
@@ -109,7 +122,24 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="LCA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LCA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LCA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -126,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_LCA">
+  <component name="RunManager" selected="Python tests.Unittests in test_BST.py">
     <configuration name="LCA" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="LCA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,12 +199,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_BST.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="LCA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_BST.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.LCA" />
       <item itemvalue="Python.test_LCA" />
+      <item itemvalue="Python tests.Unittests in test_BST.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_BST.py" />
         <item itemvalue="Python.test_LCA" />
         <item itemvalue="Python.LCA" />
       </list>
@@ -193,6 +239,38 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_test_BST_py - 2018.10.02 at 15h 21m 45s.xml">
+      <configuration name="Unittests in test_BST.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_BST_py - 2018.10.02 at 15h 22m 18s.xml">
+      <configuration name="Unittests in test_BST.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_BST_py - 2018.10.02 at 15h 28m 32s.xml">
+      <configuration name="Unittests in test_BST.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_BST_py - 2018.10.02 at 15h 37m 10s.xml">
+      <configuration name="Unittests in test_BST.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_BST_py - 2018.10.02 at 16h 06m 18s.xml">
+      <configuration name="Unittests in test_BST.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_BST_py - 2018.10.02 at 16h 07m 11s.xml">
+      <configuration name="Unittests in test_BST.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_BST_py - 2018.10.02 at 16h 07m 18s.xml">
+      <configuration name="Unittests in test_BST.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_BST_py - 2018.10.02 at 16h 07m 26s.xml">
+      <configuration name="Unittests in test_BST.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_BST_py - 2018.10.02 at 16h 14m 38s.xml">
+      <configuration name="Unittests in test_BST.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_BST_py - 2018.10.02 at 16h 14m 57s.xml">
+      <configuration name="Unittests in test_BST.py" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -203,21 +281,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="779" height="830" extended-state="0" />
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.45833334" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.45772788" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4953765" weight="0.2776204" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4919355" visible="true" weight="0.39484978" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48943198" visible="true" weight="0.27620396" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48612946" weight="0.3895184" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49865592" weight="0.32904148" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49865592" weight="0.32904148" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5080645" side_tool="true" visible="true" weight="0.39484978" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49731183" weight="0.32904148" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.510568" side_tool="true" visible="true" weight="0.27620396" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49865592" weight="0.32904148" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -237,8 +316,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test_LCA.py</url>
-          <line>8</line>
+          <line>1</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_BST.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -252,27 +336,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test_LCA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LCA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+        <state relative-caret-position="170">
+          <caret line="53" column="29" lean-forward="true" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
           <folding>
-            <marker date="1538478632946" expanded="true" signature="11:16" ph="..." />
-            <marker date="1538478632946" expanded="true" signature="361:392" ph="..." />
-            <marker date="1538478632946" expanded="true" signature="457:462" ph="..." />
-            <marker date="1538478632946" expanded="true" signature="481:490" ph="..." />
-            <marker date="1538478632946" expanded="true" signature="549:558" ph="..." />
-            <marker date="1538478632946" expanded="true" signature="662:827" ph="..." />
+            <marker date="1538493354056" expanded="true" signature="11:16" ph="..." />
+            <marker date="1538493354056" expanded="true" signature="261:292" ph="..." />
+            <marker date="1538493354056" expanded="true" signature="446:451" ph="..." />
+            <marker date="1538493354056" expanded="true" signature="470:479" ph="..." />
+            <marker date="1538493354056" expanded="true" signature="538:547" ph="..." />
+            <marker date="1538493354056" expanded="true" signature="651:816" ph="..." />
+            <marker date="1538493354056" expanded="true" signature="1336:1341" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_LCA.py">
+    <entry file="file://$PROJECT_DIR$/test_BST.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="327">
+          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
+            <marker date="1538493516753" expanded="true" signature="404:405" ph="..." />
           </folding>
         </state>
       </provider>
