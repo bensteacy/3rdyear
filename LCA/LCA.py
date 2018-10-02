@@ -13,8 +13,14 @@ class Node:
     def set(self, value):
         self.value = value
 
+    def has_left_node(self):
+        return self.left
 
-class LCA:
+    def has_right_node(self):
+        return self.right
+
+
+class BST:
 
     def __init__(self):
         self.root = None
@@ -35,35 +41,27 @@ class LCA:
 
     def put_private(self, key, value, new_node):
         if key < new_node.key:
-            if new_node.hasLeftNode():
+            if new_node.has_left_node():
                 self.put_private(key, value, new_node.left)
             else:
                 new_node.leftNode = Node(key, value, parent=new_node)
         else:
-            if new_node.hasRightNode():
+            if new_node.has_right_node():
                 self.put_private(key, value, new_node.right)
             else:
                 new_node.left = Node(key, value, parent=new_node)
 
-    def find_lca(root, node1, node2):
 
-        route1 = []
-        route2 = []
-        find_route(root, route1, node1)
-        find_route(root, route2, node2)
-        x = 0
-        while x < len(route1) and x < len(route2):
-            if route1[x] != route2[x]:
-                break
-            x += 1
-        return route1[x-1]
+def find_lca(root, node1, node2):
+    if root is None:
+        return None
 
-    def find_route(root, route, key):
+    if root.key > node1 and root.data > node2:
+        return root.find_lca(root.left, node1, node2)
 
-        route.append(root.key)
-        if ((root.left != None and find_route(root.left, route, key)) or
-                (root.right != None and find_route(root.right, route, key))):
-            return True
+    if root.key > node2 and root.data > node1:
+        return root.find_lca(root.right, node1, node2)
 
-
-
+# test_tree = BST()
+# test_tree.put_public(5, 7)
+# test_tree.put_public(10, 7)
