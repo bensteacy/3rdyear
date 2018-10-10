@@ -1,5 +1,5 @@
 from unittest import TestCase
-from LCA import BST
+from LCA import DAG
 
 
 # test tree         //        _7_
@@ -14,7 +14,7 @@ from LCA import BST
 
 class TestBST(TestCase):
     def test_put_public(self):
-        test_tree = BST()
+        test_tree = DAG()
         test_tree.put_public(7, 7)
         test_tree.put_public(8, 8)
         test_tree.put_public(3, 3)
@@ -25,7 +25,7 @@ class TestBST(TestCase):
         test_tree.put_public(5, 5)
 
     def test_find_lca(self):
-        test_tree = BST()
+        test_tree = DAG()
         test_tree.put_public(7, 7)
         test_tree.put_public(8, 8)
         test_tree.put_public(3, 3)
@@ -35,5 +35,7 @@ class TestBST(TestCase):
         test_tree.put_public(4, 4)
         test_tree.put_public(5, 5)
         self.assertEqual(test_tree.find_lca(test_tree.root, 2, 5), 3)
+        self.assertEqual(test_tree.find_lca(test_tree.root, 8, 1), 7)
+
 
 

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ffb183f-761c-4bfc-941d-75283423f9e4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/LCA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_BST.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_BST.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,12 +16,13 @@
     <session id="-73868825">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -34,12 +37,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2560" />
+          <entry key="py" value="2794" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2560" />
+          <entry key="Python" value="2794" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -47,32 +50,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LCA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="40" column="46" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="46" />
               <folding>
-                <marker date="1538494507625" expanded="true" signature="11:16" ph="..." />
-                <marker date="1538494507625" expanded="true" signature="261:292" ph="..." />
-                <marker date="1538494507625" expanded="true" signature="446:451" ph="..." />
-                <marker date="1538494507625" expanded="true" signature="470:479" ph="..." />
-                <marker date="1538494507625" expanded="true" signature="538:547" ph="..." />
-                <marker date="1538494507625" expanded="true" signature="651:816" ph="..." />
-                <marker date="1538494507625" expanded="true" signature="1336:1341" ph="..." />
+                <marker date="1539207453899" expanded="true" signature="11:16" ph="..." />
+                <marker date="1539207453899" expanded="true" signature="294:324" ph="..." />
+                <marker date="1539207453899" expanded="true" signature="352:384" ph="..." />
+                <marker date="1539207453899" expanded="true" signature="481:486" ph="..." />
+                <marker date="1539207453899" expanded="true" signature="505:514" ph="..." />
+                <marker date="1539207453899" expanded="true" signature="573:582" ph="..." />
+                <marker date="1539207453899" expanded="true" signature="693:854" ph="..." />
+                <marker date="1539207453899" expanded="true" signature="1374:1379" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_BST.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="221">
+              <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
-                <marker date="1538493516753" expanded="true" signature="404:405" ph="..." />
+                <marker date="1539207032993" expanded="true" signature="404:405" ph="..." />
               </folding>
             </state>
           </provider>
@@ -110,8 +114,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1905" />
-    <option name="width" value="1948" />
+    <option name="x" value="-15" />
+    <option name="width" value="1950" />
     <option name="height" value="2075" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -119,24 +123,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="LCA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LCA" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LCA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -237,9 +224,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_BST_py - 2018.10.02 at 16h 22m 57s.xml">
-      <configuration name="Unittests in test_BST.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_BST_py - 2018.10.02 at 16h 23m 49s.xml">
       <configuration name="Unittests in test_BST.py" configurationId="tests" />
     </history-entry>
@@ -267,6 +251,9 @@
     <history-entry file="Unittests_in_test_BST_py - 2018.10.02 at 16h 35m 18s.xml">
       <configuration name="Unittests in test_BST.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_BST_py - 2018.10.02 at 16h 40m 28s.xml">
+      <configuration name="Unittests in test_BST.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -285,14 +272,14 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48612946" weight="0.27620396" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48546895" visible="true" weight="0.27620396" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48282695" weight="0.3895184" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49865592" weight="0.32904148" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49603698" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.503963" side_tool="true" visible="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49339497" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.506605" side_tool="true" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49865592" weight="0.32904148" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -339,29 +326,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LCA.py">
+    <entry file="file://$PROJECT_DIR$/test_BST.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        <state relative-caret-position="221">
+          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
           <folding>
-            <marker date="1538494507625" expanded="true" signature="11:16" ph="..." />
-            <marker date="1538494507625" expanded="true" signature="261:292" ph="..." />
-            <marker date="1538494507625" expanded="true" signature="446:451" ph="..." />
-            <marker date="1538494507625" expanded="true" signature="470:479" ph="..." />
-            <marker date="1538494507625" expanded="true" signature="538:547" ph="..." />
-            <marker date="1538494507625" expanded="true" signature="651:816" ph="..." />
-            <marker date="1538494507625" expanded="true" signature="1336:1341" ph="..." />
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1539207032993" expanded="true" signature="404:405" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_BST.py">
+    <entry file="file://$PROJECT_DIR$/LCA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="68">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="46" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <marker date="1538493516753" expanded="true" signature="404:405" ph="..." />
+            <marker date="1539207453899" expanded="true" signature="11:16" ph="..." />
+            <marker date="1539207453899" expanded="true" signature="294:324" ph="..." />
+            <marker date="1539207453899" expanded="true" signature="352:384" ph="..." />
+            <marker date="1539207453899" expanded="true" signature="481:486" ph="..." />
+            <marker date="1539207453899" expanded="true" signature="505:514" ph="..." />
+            <marker date="1539207453899" expanded="true" signature="573:582" ph="..." />
+            <marker date="1539207453899" expanded="true" signature="693:854" ph="..." />
+            <marker date="1539207453899" expanded="true" signature="1374:1379" ph="..." />
           </folding>
         </state>
       </provider>

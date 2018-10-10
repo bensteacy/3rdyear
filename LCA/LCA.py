@@ -1,24 +1,25 @@
 class Node:
-    def __init__(self, key, value, left=None, right=None,
+    def __init__(self, key, value, level, children=None,
                  parent=None):
-        self.left = left
-        self.right = right
+        if children is None:
+            self.children = []
         self.parent = parent
         self.value = value
         self.key = key
+        self.level = level
 
-    def has_left_node(self):
-        return self.left
+    def has_children(self):
+        return self.children
 
-    def has_right_node(self):
-        return self.right
+    def return_level(self):
+        return self.level
 
     def is_root_node(self):
         if self.parent is not None:
             return True
 
 
-class BST:
+class DAG:
 
     def __init__(self):
         self.root = None
@@ -30,9 +31,9 @@ class BST:
     def __len__(self):
         return self.size
 
-    def put_public(self, key, value):
+    def put_public(self, key, value, level):
         if self.root:
-            self.put_private(key, value, self.root)
+            self.put_private(key, value, level)
         else:
             self.root = Node(key, value)
         self.size = self.size + 1
@@ -53,6 +54,9 @@ class BST:
 
         if self.root is None:
             return None
+
+        if node1 == node2:
+            return 
 
         if current_node.key > node1 and current_node.key > node2:
             return self.find_lca(current_node.left, node1, node2)
