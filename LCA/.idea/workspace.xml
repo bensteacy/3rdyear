@@ -16,13 +16,14 @@
     <session id="-73868825">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="4" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -37,12 +38,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2794" />
+          <entry key="py" value="3063" />
+          <entry key="txt" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2794" />
+          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="Python" value="3063" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -53,17 +56,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LCA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="40" column="46" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="46" />
+            <state relative-caret-position="-295">
+              <caret line="57" column="13" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="59" selection-end-column="33" />
               <folding>
-                <marker date="1539207453899" expanded="true" signature="11:16" ph="..." />
-                <marker date="1539207453899" expanded="true" signature="294:324" ph="..." />
-                <marker date="1539207453899" expanded="true" signature="352:384" ph="..." />
-                <marker date="1539207453899" expanded="true" signature="481:486" ph="..." />
-                <marker date="1539207453899" expanded="true" signature="505:514" ph="..." />
-                <marker date="1539207453899" expanded="true" signature="573:582" ph="..." />
-                <marker date="1539207453899" expanded="true" signature="693:854" ph="..." />
-                <marker date="1539207453899" expanded="true" signature="1374:1379" ph="..." />
+                <marker date="1539541894429" expanded="true" signature="11:16" ph="..." />
+                <marker date="1539541894429" expanded="true" signature="2249:2254" ph="..." />
+                <marker date="1539541894429" expanded="true" signature="2273:2282" ph="..." />
+                <marker date="1539541894429" expanded="true" signature="2341:2350" ph="..." />
+                <marker date="1539541894429" expanded="true" signature="2462:2572" ph="..." />
+                <marker date="1539541894429" expanded="true" signature="3100:3105" ph="..." />
               </folding>
             </state>
           </provider>
@@ -72,11 +73,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_BST.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+            <state relative-caret-position="239">
+              <caret line="36" column="43" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="43" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
-                <marker date="1539207032993" expanded="true" signature="404:405" ph="..." />
+                <marker date="1539526889856" expanded="true" signature="404:405" ph="..." />
               </folding>
             </state>
           </provider>
@@ -113,9 +114,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-15" />
-    <option name="width" value="1950" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1905" />
+    <option name="width" value="1948" />
     <option name="height" value="2075" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -221,6 +222,14 @@
       <option name="presentableId" value="Default" />
       <updated>1537616172359</updated>
     </task>
+    <task id="LOCAL-00001" summary="starting to adapt to DAG format">
+      <created>1539207749709</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539207749709</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -265,7 +274,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
+    <frame x="762" y="0" width="779" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.45772788" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -276,11 +286,11 @@
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48282695" weight="0.3895184" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49865592" weight="0.32904148" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49798658" weight="0.32904148" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49339497" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.506605" side_tool="true" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49865592" weight="0.32904148" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4905914" visible="true" weight="0.3319027" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5094086" side_tool="true" visible="true" weight="0.3319027" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49798658" weight="0.32904148" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -288,6 +298,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="starting to adapt to DAG format" />
+    <option name="LAST_COMMIT_MESSAGE" value="starting to adapt to DAG format" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -328,28 +342,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_BST.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        <state relative-caret-position="239">
+          <caret line="36" column="43" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="43" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-            <marker date="1539207032993" expanded="true" signature="404:405" ph="..." />
+            <marker date="1539526889856" expanded="true" signature="404:405" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LCA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="46" />
+        <state relative-caret-position="-295">
+          <caret line="57" column="13" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="59" selection-end-column="33" />
           <folding>
-            <marker date="1539207453899" expanded="true" signature="11:16" ph="..." />
-            <marker date="1539207453899" expanded="true" signature="294:324" ph="..." />
-            <marker date="1539207453899" expanded="true" signature="352:384" ph="..." />
-            <marker date="1539207453899" expanded="true" signature="481:486" ph="..." />
-            <marker date="1539207453899" expanded="true" signature="505:514" ph="..." />
-            <marker date="1539207453899" expanded="true" signature="573:582" ph="..." />
-            <marker date="1539207453899" expanded="true" signature="693:854" ph="..." />
-            <marker date="1539207453899" expanded="true" signature="1374:1379" ph="..." />
+            <marker date="1539541894429" expanded="true" signature="11:16" ph="..." />
+            <marker date="1539541894429" expanded="true" signature="2249:2254" ph="..." />
+            <marker date="1539541894429" expanded="true" signature="2273:2282" ph="..." />
+            <marker date="1539541894429" expanded="true" signature="2341:2350" ph="..." />
+            <marker date="1539541894429" expanded="true" signature="2462:2572" ph="..." />
+            <marker date="1539541894429" expanded="true" signature="3100:3105" ph="..." />
           </folding>
         </state>
       </provider>
