@@ -19,26 +19,32 @@ class Node:
 
 
 class DNode:
-    def __init__(self, key, value, level, parent=None,
-                 children=None):
-        if children is None:
-            self.children = []
-        if parent is None:
-            self.parent = []
-        self.value = value
-        self.key = key
-        self.level = level
+    def __init__(self, dkey, dvalue, dlevel, dparent=None,
+                 dchildren=None):
+        if dchildren is None:
+            self.dchildren = []
+        if dparent is None:
+            self.dparent = []
+        self.dvalue = dvalue
+        self.dkey = dkey
+        self.dlevel = dlevel
 
-    def has_children(self):
-        return self.children
 
-    def return_level(self):
-        return self.level
-
-    def is_root_node(self):
-        if self.parent is not None:
+    def has_dchildren(self):
+        if len(self.dchildren)>0:
             return True
 
+    def return_dlevel(self):
+        return self.dlevel
+
+    def is_root_dnode(self):
+        if self.dparent is not None:
+            return True
+    def size_dparent(self):
+        return len(self.dparent)
+
+    def size_dchildren(self):
+        return len(self.dchildren)
 
 class BST:
 
@@ -100,23 +106,27 @@ class DAG:
     def __len__(self):
         return self.size
 
-    def insert_root(self, key, value, level):
+    def insert_root(self, key, value):
         if not self.root:
-            self.root = Node(key, value, level)
+            self.root = Node(key, value, 0)
         self.size = self.size + 1
 
-    def insert_DNode(self, key, value, level, ):
-        if key < new_node.key:
-            if new_node.has_left_node():
-                self.put_private(key, value, new_node.left)
-            else:
-                new_node.left = Node(key, value, parent=new_node)
-        else:
-            if new_node.has_right_node():
-                self.put_private(key, value, new_node.right)
-            else:
-                new_node.right = Node(key, value, parent=new_node)
-    """
+    #def insert_DNode(self, key, value, level, parent_node, current_node):
+     #   for i in range(0,current_node.size_children)
+
+    def find_node(self, key, level, current_node):
+        for i in range(0, current_node.size_dchildren-1):
+            if current_node.key == key & current_node.level == level:
+                return current_node
+            elif current_node.has_dchildren:
+                self.find_node(key, level, current_node.dchildren[i])
+            elif:
+                self.find_node(key, level, current_node.dchildren[i])
+
+
+
+
+
 
     def find_lca(self, current_node, node1, node2):
 
