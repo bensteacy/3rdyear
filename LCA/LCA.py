@@ -20,7 +20,7 @@ class Node:
 
 class DNode:
     def __init__(self, dkey, dvalue, dlevel, dparent=None,
-                 dchildren=None):
+                 dchildren=None, visited=False):
         if dchildren is None:
             self.dchildren = []
         if dparent is None:
@@ -28,10 +28,10 @@ class DNode:
         self.dvalue = dvalue
         self.dkey = dkey
         self.dlevel = dlevel
-
+        self.visited = visited
 
     def has_dchildren(self):
-        if len(self.dchildren)>0:
+        if len(self.dchildren) > 0:
             return True
 
     def return_dlevel(self):
@@ -40,11 +40,17 @@ class DNode:
     def is_root_dnode(self):
         if self.dparent is not None:
             return True
+
     def size_dparent(self):
         return len(self.dparent)
 
     def size_dchildren(self):
         return len(self.dchildren)
+
+    def is_root_node(self):
+        if self.dparent is not None:
+            return True
+
 
 class BST:
 
@@ -111,22 +117,39 @@ class DAG:
             self.root = Node(key, value, 0)
         self.size = self.size + 1
 
-    #def insert_DNode(self, key, value, level, parent_node, current_node):
-     #   for i in range(0,current_node.size_children)
+    # def insert_DNode(self, key, value, level, parent_node, current_node):
+    #   for i in range(0,current_node.size_children)
+    #def insert_node(self, key, level, current_node, parent_node):
+
 
     def find_node(self, key, level, current_node):
-        for i in range(0, current_node.size_dchildren-1):
-            if current_node.key == key & current_node.level == level:
-                return current_node
-            elif current_node.has_dchildren:
-                self.find_node(key, level, current_node.dchildren[i])
-            elif:
-                self.find_node(key, level, current_node.dchildren[i])
+        return self.find_node_private(key, level, current_node, path=None, visited=None)
 
+    def find_node_private(self, key, level, current_node, path, visited):
 
+        if visited is None:
+            visited = []
+        if path is None:
+            path = []
 
-
-
+        if current_node.key == key & current_node.level == level:
+            return current_node
+        elif current_node.has_dchildren:
+            if current_node not in visited:
+                visited.append(current_node)
+            path.append(current_node)
+            for i in range(0, len(current_node - 1)):
+                if current_node.children[i] not in visited:
+                    self.find_node_private(key, level, current_node.children[i],
+                                           path, visited)
+            if current_node.is_root_node:
+                path.pop()
+                prev_node = path[-1]
+                self.find_node_private(key, level, prev_node,
+                                       path, visited)
+            else:
+                print("No Value Exists")
+                return None
 
     def find_lca(self, current_node, node1, node2):
 
@@ -134,7 +157,7 @@ class DAG:
             return None
 
         if node1 == node2:
-            return 
+            return
 
         if current_node.key > node1 and current_node.key > node2:
             return self.find_lca(current_node.left, node1, node2)
