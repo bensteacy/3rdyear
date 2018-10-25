@@ -38,6 +38,10 @@ class DNode:
     def add_parent(self, new_dnode):
         self.dparent.append(new_dnode)
 
+    def has_dparent(self):
+        if len(self.dparent) > 0:
+            return True
+
     def has_dchildren(self):
         if len(self.dchildren) > 0:
             return True
@@ -56,7 +60,7 @@ class DNode:
         return len(self.dchildren)
 
     def is_root_node(self):
-        if self.dparent is not None:
+        if self.dparent is None:
             return True
 
 
@@ -132,12 +136,13 @@ class DAG:
         if parent_node is not None:
             new_node = DNode(key, value, level, parent_node)
             parent_node.add_child(new_node)
-            self.size = self.size+1
+            self.size = self.size + 1
         else:
             print("No such parent value exists")
 
     def find_node(self, key, level):
-        return self.find_node_private(key, level, self.root, path=None, visited=None)
+        found_node = self.find_node_private(key, level, self.root, path=None, visited=None)
+        return found_node
 
     def find_node_private(self, key, level, current_node, path, visited):
 
@@ -148,25 +153,22 @@ class DAG:
 
         if current_node.dkey == key and current_node.dlevel == level:
             return current_node
-
         elif current_node.has_dchildren:
             if current_node not in visited:
                 visited.append(current_node)
-            path.append(current_node)
+                path.append(current_node)
             j = len(current_node.dchildren)
             i = 0
-            while i < j:
+            for i in range(i, j):
                 if current_node.dchildren[i] not in visited:
-                    self.find_node_private(key, level, current_node.dchildren[i], path, visited)
-                i += 1
-            if current_node.is_root_node:
+                    return self.find_node_private(key, level, current_node.dchildren[i], path, visited)
+            if current_node.has_dparent is False:
                 print("No Value Exists")
                 return None
             else:
                 path.pop()
                 prev_node = path[-1]
-                self.find_node_private(key, level, prev_node,
-                                       path, visited)
+                return self.find_node_private(key, level, prev_node, path, visited)
 
     def find_lca(self, current_node, node1, node2):
 
