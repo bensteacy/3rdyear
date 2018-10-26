@@ -39,14 +39,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="5953" />
-          <entry key="txt" value="197" />
+          <entry key="py" value="6909" />
+          <entry key="txt" value="260" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="197" />
-          <entry key="Python" value="5953" />
+          <entry key="PLAIN_TEXT" value="260" />
+          <entry key="Python" value="6909" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -54,22 +54,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LCA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="162" column="17" lean-forward="true" selection-start-line="162" selection-start-column="17" selection-end-line="162" selection-end-column="17" />
+            <state relative-caret-position="290">
+              <caret line="222" column="56" selection-start-line="222" selection-start-column="56" selection-end-line="222" selection-end-column="56" />
               <folding>
-                <marker date="1540504207240" expanded="true" signature="11:16" ph="..." />
-                <marker date="1540504207240" expanded="true" signature="2852:2857" ph="..." />
-                <marker date="1540504207240" expanded="true" signature="2876:2885" ph="..." />
-                <marker date="1540504207240" expanded="true" signature="2944:2953" ph="..." />
-                <marker date="1540504207240" expanded="true" signature="3058:3165" ph="..." />
-                <marker date="1540504207240" expanded="true" signature="3375:3696" ph="..." />
-                <marker date="1540504207240" expanded="true" signature="3728:3852" ph="..." />
-                <marker date="1540504207240" expanded="true" signature="3922:4849" ph="..." />
-                <marker date="1540504207240" expanded="true" signature="4896:4906" ph="..." />
-                <marker date="1540504207240" expanded="true" signature="4897:4902" ph="..." />
+                <marker date="1540567236248" expanded="true" signature="11:16" ph="..." />
+                <marker date="1540567236248" expanded="true" signature="2891:2896" ph="..." />
+                <marker date="1540567236248" expanded="true" signature="2915:2924" ph="..." />
+                <marker date="1540567236248" expanded="true" signature="2983:2992" ph="..." />
+                <marker date="1540567236248" expanded="true" signature="3097:3204" ph="..." />
+                <marker date="1540567236248" expanded="true" signature="3414:3735" ph="..." />
+                <marker date="1540567236248" expanded="true" signature="3853:3859" ph="..." />
+                <marker date="1540567236248" expanded="true" signature="3929:5969" ph="..." />
+                <marker date="1540567236248" expanded="true" signature="6002:6012" ph="..." />
+                <marker date="1540567236248" expanded="true" signature="6003:6008" ph="..." />
               </folding>
             </state>
           </provider>
@@ -84,14 +84,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_DAG.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="238">
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
-                <marker date="1540493522045" expanded="true" signature="133:466" ph="..." />
+                <marker date="1540541580341" expanded="true" signature="133:514" ph="..." />
               </folding>
             </state>
           </provider>
@@ -100,7 +100,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_BST.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
+            <state relative-caret-position="321">
               <caret line="36" column="69" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="69" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -301,38 +301,45 @@
       <option name="project" value="LOCAL" />
       <updated>1540492208280</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="insert_node &amp; find_node finally works! onto the lca :)">
+      <created>1540504409262</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1540504409262</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 22h 32m 12s.xml">
+    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 23h 03m 30s.xml">
       <configuration name="Unittests in test_DAG.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 22h 37m 22s.xml">
+    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 23h 04m 12s.xml">
       <configuration name="Unittests in test_DAG.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 22h 41m 41s.xml">
+    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 23h 05m 07s.xml">
       <configuration name="Unittests in test_DAG.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 22h 42m 41s.xml">
+    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 23h 05m 54s.xml">
       <configuration name="Unittests in test_DAG.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 22h 43m 18s.xml">
+    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 23h 07m 50s.xml">
       <configuration name="Unittests in test_DAG.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 22h 46m 02s.xml">
+    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 23h 08m 37s.xml">
       <configuration name="Unittests in test_DAG.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 22h 46m 28s.xml">
+    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 23h 08m 43s.xml">
       <configuration name="Unittests in test_DAG.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 22h 49m 22s.xml">
+    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 23h 08m 46s.xml">
       <configuration name="Unittests in test_DAG.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 22h 50m 07s.xml">
+    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 23h 12m 58s.xml">
       <configuration name="Unittests in test_DAG.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 22h 52m 38s.xml">
+    <history-entry file="Unittests_in_test_DAG_py - 2018.10.25 at 23h 13m 30s.xml">
       <configuration name="Unittests in test_DAG.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -347,21 +354,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="779" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.45772788" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4623656" weight="0.27753934" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.45564517" visible="true" weight="0.38054362" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.45967743" visible="true" weight="0.27753934" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.45244387" weight="0.3796034" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.497358" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49596775" weight="0.32761088" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48348746" weight="0.33002833" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.54435486" side_tool="true" visible="true" weight="0.38054362" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.494716" weight="0.32719547" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48118278" weight="0.32904148" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5403226" side_tool="true" visible="true" weight="0.27753934" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49327958" weight="0.32618025" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -376,7 +384,8 @@
     <MESSAGE value="attempting find node recursion" />
     <MESSAGE value="find node method v1" />
     <MESSAGE value="trying to figure work around as program keeps re-entering loop after return!" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to figure work around as program keeps re-entering loop after return!" />
+    <MESSAGE value="insert_node &amp; find_node finally works! onto the lca :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="insert_node &amp; find_node finally works! onto the lca :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -397,14 +406,14 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/LCA.py</url>
-          <line>165</line>
-          <option name="timeStamp" value="59" />
+          <url>file://$PROJECT_DIR$/test_DAG.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test_DAG.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="61" />
+          <url>file://$PROJECT_DIR$/LCA.py</url>
+          <line>165</line>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -432,9 +441,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_BST.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
+        <state relative-caret-position="321">
           <caret line="36" column="69" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="69" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -443,39 +459,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/common.py">
+    <entry file="file://$PROJECT_DIR$/test_DAG.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="238">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1540541580341" expanded="true" signature="133:514" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LCA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="162" column="17" lean-forward="true" selection-start-line="162" selection-start-column="17" selection-end-line="162" selection-end-column="17" />
+        <state relative-caret-position="290">
+          <caret line="222" column="56" selection-start-line="222" selection-start-column="56" selection-end-line="222" selection-end-column="56" />
           <folding>
-            <marker date="1540504207240" expanded="true" signature="11:16" ph="..." />
-            <marker date="1540504207240" expanded="true" signature="2852:2857" ph="..." />
-            <marker date="1540504207240" expanded="true" signature="2876:2885" ph="..." />
-            <marker date="1540504207240" expanded="true" signature="2944:2953" ph="..." />
-            <marker date="1540504207240" expanded="true" signature="3058:3165" ph="..." />
-            <marker date="1540504207240" expanded="true" signature="3375:3696" ph="..." />
-            <marker date="1540504207240" expanded="true" signature="3728:3852" ph="..." />
-            <marker date="1540504207240" expanded="true" signature="3922:4849" ph="..." />
-            <marker date="1540504207240" expanded="true" signature="4896:4906" ph="..." />
-            <marker date="1540504207240" expanded="true" signature="4897:4902" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_DAG.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <marker date="1540493522045" expanded="true" signature="133:466" ph="..." />
+            <marker date="1540567236248" expanded="true" signature="11:16" ph="..." />
+            <marker date="1540567236248" expanded="true" signature="2891:2896" ph="..." />
+            <marker date="1540567236248" expanded="true" signature="2915:2924" ph="..." />
+            <marker date="1540567236248" expanded="true" signature="2983:2992" ph="..." />
+            <marker date="1540567236248" expanded="true" signature="3097:3204" ph="..." />
+            <marker date="1540567236248" expanded="true" signature="3414:3735" ph="..." />
+            <marker date="1540567236248" expanded="true" signature="3853:3859" ph="..." />
+            <marker date="1540567236248" expanded="true" signature="3929:5969" ph="..." />
+            <marker date="1540567236248" expanded="true" signature="6002:6012" ph="..." />
+            <marker date="1540567236248" expanded="true" signature="6003:6008" ph="..." />
           </folding>
         </state>
       </provider>

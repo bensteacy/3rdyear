@@ -41,6 +41,8 @@ class DNode:
     def has_dparent(self):
         if len(self.dparent) > 0:
             return True
+        else:
+            return False
 
     def has_dchildren(self):
         if len(self.dchildren) > 0:
@@ -141,8 +143,7 @@ class DAG:
             print("No such parent value exists")
 
     def find_node(self, key, level):
-        found_node = self.find_node_private(key, level, self.root, path=None, visited=None)
-        return found_node
+        return self.find_node_private(key, level, self.root, path=None, visited=None)
 
     def find_node_private(self, key, level, current_node, path, visited):
 
@@ -170,21 +171,94 @@ class DAG:
                 prev_node = path[-1]
                 return self.find_node_private(key, level, prev_node, path, visited)
 
-    def find_lca(self, current_node, node1, node2):
+    def find_path(self, key, level):
+        return self.find_node_private(key, level, self.root, path=None, visited=None)
+
+    def find_path_private(self, key, level, current_node, path, visited):
+
+        if visited is None:
+            visited = []
+        if path is None:
+            path = []
+
+        if current_node.dkey == key and current_node.dlevel == level:
+            return path
+        elif current_node.has_dchildren:
+            if current_node not in visited:
+                visited.append(current_node)
+                path.append(current_node)
+            j = len(current_node.dchildren)
+            i = 0
+            for i in range(i, j):
+                if current_node.dchildren[i] not in visited:
+                    return self.find_node_private(key, level, current_node.dchildren[i], path, visited)
+            if current_node.has_dparent is False:
+                print("No Value Exists")
+                return None
+            else:
+                path.pop()
+                prev_node = path[-1]
+                return self.find_node_private(key, level, prev_node, path, visited)
+
+    def find_lca(self, node1, node2):
 
         if self.root is None:
             return None
 
         if node1 == node2:
             return
+        an1 = self.find_ancestors(node1, node1, ancestor=None, path=None)
+        an2 = self.find_ancestors(node2, node1, ancestor=None, path=None)
+        intersect = [list(filter(lambda x: x in an1, sublist)) for sublist in an2]
+        if intersect:
+            if node1.level > node2.level:
+                max_level = node1.level - 1
+            else:
+                max_level = node2.level - 1
+            j = len(intersect)
+            i = 0
+            while max_level >= 0:
+                for i in range(i, j):
+                    current_node = range[i]
+                    if current_node.dlevel == max_level:
+                        return current_node.key, current_node.dlevel
 
-        if current_node.key > node1 and current_node.key > node2:
-            return self.find_lca(current_node.left, node1, node2)
 
-        if current_node.key > node2 and current_node.key > node1:
-            return self.find_lca(current_node.right, node1, node2)
 
-        return current_node.key
+
+
+        else:
+            print("not related")
+            return
+
+
+
+    def find_ancestors(self, dnode, current_node, ancestor, path):
+        if ancestor is None:
+            ancestor = []
+        if path is None:
+            path = []
+
+        if current_node.has_dparent:
+            j = len(current_node.dparents)
+            i = 0
+            for i in range(i, j):
+                if current_node.dparent[i] not in ancestor:
+                    ancestor.append(current_node.dparent[i])
+                    path.append(current_node.dparent[i])
+                    return self.find_ancestors(dnode, current_node.dparent[i], ancestor, path)
+            if current_node != dnode:
+                path.pop()
+                prev_node = path[-1]
+                return self.find_ancestors(dnode, prev_node, ancestor, path)
+            else:
+                return ancestor
+
+
+
+
+
+
 
 # test_tree = BST()
 # test_tree.put_public(5, 7)

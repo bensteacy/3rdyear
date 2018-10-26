@@ -12,5 +12,7 @@ class TestDAG(TestCase):
         test_dag.insert_node(9, 6, 4, 3, 0)
         test_dag.insert_node(11, 5, 4, 8, 1)
         test_dag.insert_node(11, 5, 6, 11, 4)
+        # test_dag.insert_node(11, 5, 6, 8, 7)
+
 
         print("got this far")
