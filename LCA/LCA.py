@@ -207,50 +207,45 @@ class DAG:
 
         if node1 == node2:
             return
-        an1 = self.find_ancestors(node1, node1, ancestor=None, path=None)
-        an2 = self.find_ancestors(node2, node1, ancestor=None, path=None)
-        intersect = [list(filter(lambda x: x in an1, sublist)) for sublist in an2]
+        an1 = self.find_ancestors(node1, ancestor=None, path=None)
+        an2 = self.find_ancestors(node2, ancestor=None, path=None)
+        intersect = [value for value in an1 if value in an2]
         if intersect:
-            if node1.level > node2.level:
-                max_level = node1.level - 1
+            if node1.dlevel > node2.dlevel:
+                max_level = node1.dlevel - 1
             else:
-                max_level = node2.level - 1
+                max_level = node2.dlevel - 1
             j = len(intersect)
-            i = 0
             while max_level >= 0:
+                i = 0
                 for i in range(i, j):
-                    current_node = range[i]
+                    current_node = intersect[i]
                     if current_node.dlevel == max_level:
-                        return current_node.key, current_node.dlevel
-
-
-
-
-
+                        return current_node.dkey, current_node.dlevel
+                max_level += -1
         else:
             print("not related")
             return
 
-
-
-    def find_ancestors(self, dnode, current_node, ancestor, path):
+    def find_ancestors(self, current_node, ancestor, path):
         if ancestor is None:
             ancestor = []
         if path is None:
             path = []
 
         if current_node.has_dparent:
-            j = len(current_node.dparents)
+            j = len(current_node.dparent)
             i = 0
             for i in range(i, j):
                 if current_node.dparent[i] not in ancestor:
                     ancestor.append(current_node.dparent[i])
                     path.append(current_node.dparent[i])
-                    return self.find_ancestors(dnode, current_node.dparent[i], ancestor, path)
-            if current_node != dnode:
-                path.pop()
+                    return self.find_ancestors( current_node.dparent[i], ancestor, path)
+
+            path.pop()
+            if len(path) != 0:
                 prev_node = path[-1]
-                return self.find_ancestors(dnode, prev_node, ancestor, path)
+                return self.find_ancestors(prev_node, ancestor, path)
             else:
                 return ancestor
 
